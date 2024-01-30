@@ -138,7 +138,9 @@
                         ]
                     }
                 ],
-                labels: []
+                labels: [
+                    
+                ]
             };
 
         function createChart() {
@@ -148,9 +150,10 @@
                 data: dataSource
             });
         }
+        createChart();
 
         function getBudget() {
-            axios.get('http://localhost:3000/budget')
+            axios.get('/budget')
             .then(function (res) {
                 for (var i = 0; res.data.myBudget && i < res.data.myBudget.length; i++) {
                     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;

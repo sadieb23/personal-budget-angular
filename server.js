@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use('/', express.static('public'));
 
 const budget = {
     myBudget: [
@@ -15,7 +15,7 @@ const budget = {
         },
         {
             title: 'Rent',
-            budget: 275
+            budget: 375
         },
         {
             title: 'Grocery',
