@@ -9,6 +9,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss',
 
+
 })
 export class HomepageComponent implements OnInit, AfterViewInit {
 
